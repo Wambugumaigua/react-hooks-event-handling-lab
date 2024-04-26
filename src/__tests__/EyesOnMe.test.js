@@ -1,6 +1,7 @@
-import "@testing-library/jest-dom";
-import { render, screen, fireEvent } from "@testing-library/react";
-import EyesOnMe from "../components/EyesOnMe";
+import { render, fireEvent, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect'; // Import this for toBeInTheDocument matcher
+import EyesOnMe from '../components/EyesOnMe';
+
 
 beforeEach(() => {
   render(<EyesOnMe />);
